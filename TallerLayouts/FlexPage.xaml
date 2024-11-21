@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.FlexPage">
+    <FlexLayout Direction="Column" AlignItems="Start">
+        <Frame Padding="5" Margin="5">
+            <StackLayout Orientation="Horizontal">
+                <!-- Imagen con GestureRecognizer -->
+                <Image Source="image1.jpeg" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Romel Gualoto" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        <Frame Padding="5" Margin="5">
+            <StackLayout Orientation="Horizontal">
+                <!-- Imagen con GestureRecognizer -->
+                <Image Source="image2.jpg" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Romel Gualoto" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        <Frame Padding="5" Margin="5">
+            <StackLayout Orientation="Horizontal">
+                <!-- Imagen con GestureRecognizer -->
+                <Image Source="image3.jpg" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" CommandParameter="3" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Romel Gualoto" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+    </FlexLayout>
+</ContentPage>
